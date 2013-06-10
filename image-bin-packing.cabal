@@ -1,0 +1,22 @@
+name:                image-bin-packing
+version:             0.1.0.0
+synopsis:            Packs images into a square
+description: 
+  Given a list of images, this program will return the bash and ImageMagick commands necessary to
+  generate a packed image. The plan is also printed out as machine readable comments.
+homepage:            http://github.com/jochu/image-bin-packing
+license:             MIT
+license-file:        LICENSE
+author:              Jeff Chu
+maintainer:          jochu0@gmail.com
+-- copyright:           
+category:            Graphics
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable image-bin-packing
+  hs-source-dirs: src
+  main-is: Main.hs
+  build-depends:
+        base ==4.6.*,
+        lens >= 3.9
